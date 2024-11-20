@@ -11,7 +11,7 @@ orderService.ProcessOrder("123456");
 orderService.ProcessOrder("789101");
 
 
-var filelogger = new FileLogger();
+var filelogger = new FileLogger("./logger.txt");
 var orderServiceWithFileLogging = new OrderService(filelogger);
 orderServiceWithFileLogging.ProcessOrder("421024");
 orderServiceWithFileLogging.ProcessOrder("133769");
