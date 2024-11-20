@@ -19,8 +19,6 @@ public class ConsoleLogger : BaseLogger
     }
 }
 
-
-
 public class FileLogger : BaseLogger, FileHandler
 {
     public string FilePath {get; set;}
